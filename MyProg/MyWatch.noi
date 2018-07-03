@@ -1,0 +1,28 @@
+; -----------------------------------------------------------------------------
+;  DEBUGGER : MyWatch   :  WATCH PER IL MONITORAGGIO DELLE VARIABILI    
+; -----------------------------------------------------------------------------
+;   PROJECT :           :   
+; -----------------------------------------------------------------------------
+;                                        Cancella WATCH & BREAKPOINT precedenti
+W -
+BREAKPOINT -
+; -----------------------------------------------------------------------------
+; Inserisci sotto questo commento la lista dei WATCH con il seguente formato:
+; WATCH  NomeVariabile  %DataType. I Data Type disponibili sono:
+; %U08 %U16 %U32  %S08 %S16 %S32 %B08 %float %string
+; Se la variabile e' un array far seguire la dimensione fra parentesi quadre.
+; Esempio se la variabile e' una Word e  si chiama: speed ->  WATCH speed %U16
+; Esempio se la variabile e' un array di 8 Bytes : WATCH speed %U08[8]
+; -----------------------------------------------------------------------------
+
+WATCH	adcount	%U08
+WATCH	speed	%U08
+
+Define 	DIR_port $00 
+WATCH	DIR_port	%B08
+
+WATCH	phase_A	%B08
+WATCH	phase_B	%B08
+WATCH	phase_C	%B08
+WATCH	phase_D	%B08
+

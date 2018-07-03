@@ -1,0 +1,33 @@
+
+===============================================================================
+ AUTORE: Rech Marzio c/o ITIS NegrelliForcellini   FELTRE (BL) DATA: 25.05.2017
+                                                               REV.: 18.02.2018
+===============================================================================
+ StepperMotor :
+ Firmware per la gestione di motori passo passo Unipolari e Bipolari
+-------------------------------------------------------------------------------
+ APPLICAZIONI: - Controlli di Posizione
+               - Spostamenti di precisione
+-------------------------------------------------------------------------------
+ PARTICOLARITA' : Non usa i Timers del MCU.
+                  La generazione delle fasi non usa macro ma Š fatta 
+                  interamente con microistruzioni.                 
+-------------------------------------------------------------------------------
+ MCU   : Qualsiasi
+-------------------------------------------------------------------------------
+ TARGET: 
+         Target qualsiasi con uscite digitali PTB0...PTB3  - PTA5
+         
+         - Per entrambe le modalita' usare un Driver Ponte H tipo L293D
+ 
+         - Solo per unipolari in alternativa si possono usare 4 BJT
+           con i collettori collegati agli avvolgimenti.
+           inserire 4 Resistori di Base da 1K verso le uscite digitali.     
+                   
+-------------------------------------------------------------------------------
+STRUMENTI UTILI MA NON NECESSARI PER IL TEST: - Oscilloscopio a 2 canali.
+per monitorare le fasi degli avvolgimenti                           
+-------------------------------------------------------------------------------
+DETTAGLI CONNESSIONI DI MISURA:
+- nessuno.
+-------------------------------------------------------------------------------         
